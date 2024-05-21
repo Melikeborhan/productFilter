@@ -3,6 +3,8 @@ import "./globals.css";
 import Navbar from "./components/Header/Navbar";
 import CardTemp from "./components/shoppingCard/CardTemp";
 import Footer from "./components/Footer/Footer";
+import Sidebar from "./components/sidebar/sidebar";
+
 
 
 
@@ -14,13 +16,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body >
-      <Navbar/>
-      {children}
-          <CardTemp />
-          <Footer/>
+      <body className="flex flex-col min-h-screen">
+        <Navbar />
+          <Sidebar  />
+            {children}
+            <CardTemp />
+            
+        <Footer />
       </body>
-     
-     </html>
+    </html>
   );
 }
