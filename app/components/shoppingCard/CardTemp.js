@@ -1,7 +1,6 @@
 "use client";
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import { FaRegHeart } from "react-icons/fa6";
 import ProductCard from './ProductCard';
 
 const CardTemp = () => {
@@ -36,7 +35,7 @@ const CardTemp = () => {
           <h1>Loading...</h1>
         </div>
       ) : (
-        <div className='grid grid-cols-1 lg:grid-cols-3 gap-20 mb-10 mt-10'>
+        <div className='grid sm:grid-cols-1 lg:grid-cols-3 gap-20 mb-10 mt-10 '>
       {data.slice(0, 18).map((product) => (
         <ProductCard 
           key={product.id} 

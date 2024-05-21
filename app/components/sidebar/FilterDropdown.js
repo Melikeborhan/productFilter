@@ -1,21 +1,9 @@
-import React, { useState } from 'react'
+import React from 'react';
 
 const FilterDropdown = () => {
-    const [isOpen, setIsOpen] = useState(false)
-
-    const toggleDropdown =() => {
-        setIsOpen(!isOpen)
-    }
-
   return (
-    <div>
+    <div></div>
+      );
+};
 
-
-
-
-
-    </div>
-  )
-}
-
-export default FilterDropdown
+export default FilterDropdown;

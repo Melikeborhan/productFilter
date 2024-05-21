@@ -3,7 +3,7 @@ import { CiSearch } from "react-icons/ci";
 
 const Sidebar = () => {
   return (
-    <div className='lg:fixed  mt-32 bg-amber-500 w-64 max-h-96  overflow-auto touch-pan-y mb-5   items-center justify-between '>
+    <div className='lg:fixed  mt-32 bg-amber-500 w-64 max-h-96  overflow-auto touch-pan-y mb-5   items-center justify-between hidden lg:block '>
       <div className="font-semibold">Filtreleme
       <ul className="">
         <li  className="">

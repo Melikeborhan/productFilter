@@ -11,7 +11,7 @@ const ProductCard = ({ product, truncateDescription }) => {
   };
 
   return (
-    <div className='w-96 h-auto ml-8 shadow-xl bg-white border border-amber-500  flex flex-col justify-between relative z-50'>
+    <div className='w-96 h-auto ml-8 shadow-xl bg-white border border-amber-500  flex flex-col justify-between relative z-40'>
       <div className='relative '>
         {liked ? (
           
