@@ -29,16 +29,17 @@ const CardTemp = () => {
   };
 
   return (
-    <div className='flex justify-end'>
+    <div className='flex items-center justify-center'>
       {loading ? (
         <div>
           <h1>Loading...</h1>
         </div>
       ) : (
-        <div className='grid sm:grid-cols-1 lg:grid-cols-3 gap-20 mb-10 mt-10 '>
-      {data.slice(0, 18).map((product) => (
+        <div className='grid sm:grid-cols-1 lg:grid-cols-4  ml-10 mr-7 gap-20 lg:mb-10 lg:mt-10 '>
+      {data.slice(0,20).map((product) => (
         <ProductCard 
           key={product.id} 
+          src={product.image} 
           product={product} 
           truncateDescription={truncateDescription} 
         />

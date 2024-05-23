@@ -11,35 +11,35 @@ const ProductCard = ({ product, truncateDescription }) => {
   };
 
   return (
-    <div className='w-96 h-auto ml-8 shadow-xl bg-white border border-amber-500  flex flex-col justify-between relative z-40'>
+    <div className=' w-72 h-full   ml-2 mt-4  mr-10 shadow-2xl shadow-black bg-white    flex  flex-col  justify-between relative '>
       <div className='relative '>
         {liked ? (
           
           <FaHeart 
             onClick={handleHeartClick} 
-            className='absolute top-2 right-1 text-red-500 cursor-pointer size-5' 
+            className='absolute top-2 right-1 text-amber-500 cursor-pointer size-5' 
           />
         ) : (
           <FaRegHeart 
             onClick={handleHeartClick} 
-            className='absolute top-2 right-1 text-red-500 cursor-pointer size-5' 
+            className='absolute top-2 right-1 text-amber-500 cursor-pointer size-5' 
           />
         )}
-        <div className=''>
+        <div className='pl-5  pr-5'>
           <img
-            className='w-full h-48  '
+            className='w-52 h-48 shadow-2xl ml-5  '
             src={product.image} 
-            alt={product.title} 
+            
           />
         </div>
-        <div className='font-bold mt-3'>
+        <div className='font-semibold mt-3 ml-5 mr-5  '>
           <h2>{product.title}</h2>
         </div>
-        <div className='mt-3 h-16 overflow-hidden'>
+        <div className='mt-3 h-16 overflow-hidden ml-5 mr-2'>
           <p>{truncateDescription(product.description, 5)}</p>
         </div>
       </div>
-      <div className='font-extrabold text-amber-600 text-start text-xl'>
+      <div className='font-extrabold text-amber-500 text-start text-xl'>
         <p>${product.price}</p>
       </div>
     </div>

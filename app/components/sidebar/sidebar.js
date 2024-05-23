@@ -3,88 +3,98 @@ import { CiSearch } from "react-icons/ci";
 
 const Sidebar = () => {
   return (
-    <div className='lg:fixed  mt-32 bg-amber-500 w-64 max-h-96  overflow-auto touch-pan-y mb-5   items-center justify-between hidden lg:block '>
-      <div className="font-semibold">Filtreleme
+     
+ <div className=" font-sans mb-40  max-h-screen overflow-hidden overflow-y-auto custom-scrollbar  hidden lg:block">Filtreleme
       <ul className="">
         <li  className="">
-        <div class=" mx-auto  w-52 ml-4 pt-5  ">
-          <details class=" bg-white   p-1 items-center justify-between" open>
-          <summary class=" text-base font-bold leading-6 text-amber-600  pb-2 select-none">
-           Tüm Kategoriler
-           </summary>
-        <li >
-          <input type="radio" name="category-radio" className=" "/>
-          <label classname="">Elbise</label>
-          </li>
-          <li>
-          <input type="radio" name="category-radio"   className=""/>
-          <label classname="">Gömlek</label>
-          </li>
-          <li>
-          <input type="radio" name="category-radio"  className=""/>
-          <label classname="">T-shirt</label>
-          </li>
-          <li>
-          <input type="radio" name="category-radio" className=""/>
-          <label classname="">Sneaker</label>
-          </li>
-          <input type="radio" name="category-radio"  className=""/>
-          <label classname="">Güneş Gözlüğü</label>
-          <li>
-          <input type="radio" name="category-radio" className=""/>
-          <label classname="">Pantolon</label>
-          </li>
-           </details>
+        <div class=" max-h-screen w-60 ml-4">
+        <details className="bg-white  flex items-center justify-between" open>
+              <summary className="group/item hover:bg-slate-100 text-lg font-bold leading-6 text-amber-600 pb-2 select-none">
+                Tüm Kategoriler
+              </summary>
+              <li className="">
+                <button className="text-left w-full hover:text-amber-600 p-2">
+                  Elbise
+                </button>
+              </li>
+              <li className="">
+                <button className="text-left w-full hover:text-amber-600 p-2">
+                  Gömlek
+                </button>
+              </li>
+              <li className="">
+                <button className="text-left w-full hover:text-amber-600 p-2">
+                  T-shirt
+                </button>
+              </li>
+              <li className="">
+                <button className="text-left w-full hover:text-amber-600 p-2">
+                  Sneaker
+                </button>
+              </li>
+              <li className="">
+                <button className="text-left w-full hover:text-amber-600 p-2">
+                  Güneş Gözlüğü
+                </button>
+              </li>
+              <li className="">
+                <button className="text-left w-full hover:text-amber-600 p-2">
+                  Pantolon
+                </button>
+              </li>
+            </details>
           </div>
-          </li>
-        </ul>
+        </li>
+      </ul>
 
-
-<div className="overflow-auto max-h-52 overflow-x-hidden custom-scrollbar ">
-        <ul className="">
+ {/* marka */}
+<div className="  ">
+        <ul className=" ">
         <li  className="">
         <div class=" mx-auto  w-52 ml-4   ">
           <details class=" bg-white  p-1 items-center justify-between" open>
-          <summary class="border-bg text-sm font-bold leading-6 text-amber-600 pb-2">
+          <summary class="mb-2 text-lg group/item hover:bg-slate-100 border-bg  font-bold leading-6  text-amber-600 pb-auto">
            Marka
            </summary>
-        <li >
-          <input type="radio" name="marka-radio" className=" "/>
-          <label classname="">KVK PRİVACY</label>
+        <li className="flex items-center" >
+          <input type="radio" name="marka-radio" className=" size-5 mr-1 "/>
+          <label classname="ml-1">KVK PRİVACY</label>
           </li>
-          <li>
-          <input type="radio" name="marka-radio"   className=""/>
-          <label classname="">Avva</label>
+          <li className="flex items-center">
+          <input type="radio" name="marka-radio"   className=" size-5 mr-1"/>
+          <label classname="ml-1">Avva</label>
           </li>
-          <li>
-          <input type="radio" name="marka-radio"  className=""/>
-          <label classname="">Kinetix</label>
+          <li className="flex items-center">
+          <input type="radio" name="marka-radio"  className=" size-5 mr-1"/>
+          <label classname="ml-1">Kinetix</label>
           </li>
-          <li>
-          <input type="radio" name="marka-radio" className=""/>
-          <label classname="">Polaris</label>
+          <li className="flex items-center">
+          <input type="radio" name="marka-radio" className=" size-5 mr-1"/>
+          <label classname="ml-1">Polaris</label>
           </li>
-          <input type="radio" name="marka-radio"  className=""/>
-          <label classname="">Zara</label>
-          <li>
-          <input type="radio" name="marka-radio" className=""/>
-          <label classname="">FullaModa</label>
+          <li className="flex items-center">
+          <input type="radio" name="marka-radio"  className=" size-5 mr-1"/>
+          <label classname="ml-1">Zara</label>
           </li>
-          <li>
-          <input type="radio" name="marka-radio" className=""/>
-          <label classname="">Koton</label>
+          <li className="flex items-center">
+          <input type="radio" name="marka-radio" className=" size-5 mr-1"/>
+          <label classname="ml-1">FullaModa</label>
           </li>
-          <li>
-          <input type="radio" name="category-radio" className=""/>
-          <label classname="">Bambi</label>
+          <li className="flex items-center">
+          <input type="radio" name="marka-radio" className=" size-5 mr-1"/>
+          <label classname="ml-1">Koton</label>
           </li>
-          <li>
-          <input type="radio" name="marka-radio" className=""/>
-          <label classname="">Nevfix</label>
+          <li className="flex items-center">
+          <input type="radio" name="category-radio" className=" size-5 mr-1"/>
+          <label classname="ml-1">Bambi</label>
           </li>
-          <li>
-          <input type="radio" name="marka-radio" className=""/>
-          <label classname="">Penti</label>
+          <li className="flex items-center">
+          <input type="radio" name="marka-radio" className=" size-5 mr-1"/>
+          <label classname="ml-1">Nevfix</label>
+          </li>
+          <li className="flex items-center">
+          <input type="radio" name="marka-radio" className=" size-5 mr-1"/>
+          <label classname="ml-1">Penti</label>
           </li>
            </details>
           </div>
@@ -95,49 +105,49 @@ const Sidebar = () => {
 
         <ul className="">
         <li  className="">
-        <div class=" mx-auto  w-52 ml-4   ">
+        <div class=" mx-auto w-52 ml-4   ">
           <details class=" bg-white  p-1 items-center justify-between" open>
-          <summary class=" text-sm font-bold leading-6 text-amber-600 pb-2">
+          <summary class="group/item hover:bg-slate-100 text-lg font-bold leading-6 text-amber-600 pb-2">
            Beden
            </summary>
           
-        <li >
-          <input type="radio" name="beden-radio" className=" "/>
-          <label classname="">2XS</label>
+        <li className="flex items-center" >
+          <input type="radio" name="beden-radio" className="size-5 mr-1"/>
+          <label classname="ml-1">2XS</label>
           </li>
-          <li>
-          <input type="radio" name="beden-radio"   className=""/>
-          <label classname="">XXS</label>
+          <li className="flex items-center" >
+          <input type="radio" name="beden-radio"   className="size-5 mr-1"/>
+          <label classname="ml-1">XXS</label>
           </li>
-          <li>
-          <input type="radio" name="beden-radio"  className=""/>
-          <label classname="">XS</label>
+          <li className="flex items-center">
+          <input type="radio" name="beden-radio"  className="size-5 mr-1"/>
+          <label classname="ml-1">XS</label>
           </li>
-          <li>
-          <input type="radio" name="beden-radio" className=""/>
-          <label classname="">S</label>
+          <li className="flex items-center">
+          <input type="radio" name="beden-radio" className="size-5 mr-1"/>
+          <label classname="ml-1">S</label>
           </li>
-          <input type="radio" name="beden-radio"  className=""/>
-          <label classname="">S/M</label>
-          <li>
-          <input type="radio" name="beden-radio" className=""/>
-          <label classname="">M</label>
+          <input type="radio" name="beden-radio"  className="size-5 mr-1"/>
+          <label classname="ml-1">S/M</label>
+          <li className="flex items-center">
+          <input type="radio" name="beden-radio" className="size-5 mr-1"/>
+          <label classname="ml-1">M</label>
           </li>
-          <li>
-          <input type="radio" name="beden-radio" className=""/>
-          <label classname="">M/L</label>
+          <li className="flex items-center">
+          <input type="radio" name="beden-radio" className="size-5 mr-1"/>
+          <label classname="ml-1">M/L</label>
           </li>
-          <li>
-          <input type="radio" name="beden-radio" className=""/>
-          <label classname="">XL</label>
+          <li className="flex items-center">
+          <input type="radio" name="beden-radio" className="size-5 mr-1"/>
+          <label classname="ml-1">XL</label>
           </li>
-          <li>
-          <input type="radio" name="beden-radio" className=""/>
-          <label classname="">2XL</label>
+          <li className="flex items-center">
+          <input type="radio" name="beden-radio" className="size-5 mr-1"/>
+          <label classname="ml-1">2XL</label>
           </li>
-          <li>
-          <input type="radio" name="beden-radio" className=""/>
-          <label classname="">3XL</label>
+          <li className="flex items-center">
+          <input type="radio" name="beden-radio" className="size-5 mr-1"/>
+          <label classname="ml-1">3XL</label>
           </li>
            </details>
            
@@ -148,11 +158,11 @@ const Sidebar = () => {
       {/* Fiyat */}
 
 
-        <ul className=" mb-5">
+        <ul className="">
         <li  className="">
         <div class=" mx-auto  w-52 ml-4   ">
           <details class=" bg-white  p-1 items-center justify-between" open>
-          <summary class="border-bg text-sm font-bold leading-6 text-amber-600 pb-2">
+          <summary class="group/item hover:bg-slate-100 border-bg text-lg font-bold leading-6 text-amber-600 pb-2">
            Fiyat
            </summary>
        
@@ -189,9 +199,46 @@ const Sidebar = () => {
            </details>
           </div>
           </li>
+          </ul>
+
+
+
+
+          <div className="   ">
+        <ul className="">
+        <li  className="">
+        <div class=" mx-auto   w-52 ml-4   ">
+          <details class=" bg-white  p-1 items-center justify-between" open>
+          <summary class="group/item hover:bg-slate-100 border-bg text-lg font-bold leading-6  text-amber-600 pb-auto">
+           Renk
+           </summary>
+           <div class="mt-5 grid grid-cols-4 gap-2 mr-3">
+          <button className="w-8 h-8 rounded-full border-large bg-black" />
+          <button className="w-8 h-8 rounded-full border-large bg-red-500" />
+          <button className="w-8 h-8 rounded-full border-large bg-green-500" />
+          <button className="w-8 h-8 rounded-full border-large bg-yellow-500" />
+          <button className="w-8 h-8 rounded-full border-large bg-white" />
+          <button className="w-8 h-8 rounded-full border-large bg-sky-500" />
+          <button className="w-8 h-8 rounded-full border-large bg-blue-500" />
+          <button className="w-8 h-8 rounded-full border-large bg-gray-500" />
+          <button className="w-8 h-8 rounded-full border-large bg-orange-500" />
+          <button className="w-8 h-8 rounded-full border-large bg-amber-500" />
+          <button className="w-8 h-8 rounded-full border-large bg-pink-500" />
+        </div>
+
+           </details>
+          </div>
+          </li>
         </ul>
         </div>
-    </div>
+
+
+       
+
+
+        
+        </div>
+    
 
   );
 };
