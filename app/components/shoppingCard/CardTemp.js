@@ -35,8 +35,8 @@ const CardTemp = () => {
           <h1>Loading...</h1>
         </div>
       ) : (
-        <div className='grid sm:grid-cols-1 lg:grid-cols-4  ml-10 mr-7 gap-20 lg:mb-10 lg:mt-10 '>
-      {data.slice(0,20).map((product) => (
+        <div className="grid sm:grid-cols-1 lg:grid-cols-4 gap-4 lg:gap-20 lg:ml-10 lg:mr-7 lg:mb-10  lg:mt-10 w-full px-4"> 
+             {data.slice(0,20).map((product) => (
         <ProductCard 
           key={product.id} 
           src={product.image} 
